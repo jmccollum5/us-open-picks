@@ -29,161 +29,160 @@ const PARTICIPANT_COLORS = {
 };
 
 const FIELD = [
-  { name: 'Scottie Scheffler', odds: '+380' },
-  { name: 'Rory McIlroy', odds: '+910' },
-  { name: 'Jon Rahm', odds: '+1375' },
-  { name: 'Cameron Young', odds: '+1600' },
-  { name: 'Bryson DeChambeau', odds: '+1850' },
-  { name: 'Xander Schauffele', odds: '+2000' },
-  { name: 'Ludvig Aberg', odds: '+2000' },
-  { name: 'Matt Fitzpatrick', odds: '+2300' },
-  { name: 'Tommy Fleetwood', odds: '+2700' },
-  { name: 'Brooks Koepka', odds: '+3700' },
-  { name: 'Collin Morikawa', odds: '+3800' },
-  { name: 'Justin Rose', odds: '+4700' },
-  { name: 'Justin Thomas', odds: '+4900' },
-  { name: 'Russell Henley', odds: '+5000' },
-  { name: 'Patrick Cantlay', odds: '+5200' },
-  { name: 'Si Woo Kim', odds: '+5800' },
-  { name: 'Viktor Hovland', odds: '+5900' },
-  { name: 'Tyrrell Hatton', odds: '+5900' },
-  { name: 'Jordan Spieth', odds: '+6300' },
-  { name: 'Min Woo Lee', odds: '+6400' },
-  { name: 'Robert MacIntyre', odds: '+6700' },
-  { name: 'Sam Burns', odds: '+6800' },
-  { name: 'Adam Scott', odds: '+7000' },
-  { name: 'Nicolai Hojgaard', odds: '+7000' },
-  { name: 'Rickie Fowler', odds: '+7200' },
-  { name: 'Chris Gotterup', odds: '+7600' },
-  { name: 'Hideki Matsuyama', odds: '+8000' },
-  { name: 'Patrick Reed', odds: '+8200' },
-  { name: 'Kurt Kitayama', odds: '+8800' },
-  { name: 'J.J. Spaun', odds: '+9400' },
-  { name: 'Shane Lowry', odds: '+9800' },
-  { name: 'Maverick McNealy', odds: '+9800' },
-  { name: 'Akshay Bhatia', odds: '+10000' },
-  { name: 'Joaquin Niemann', odds: '+10000' },
-  { name: 'Ben Griffin', odds: '+10500' },
-  { name: 'Sepp Straka', odds: '+10500' },
-  { name: 'Gary Woodland', odds: '+11000' },
-  { name: 'Harris English', odds: '+11500' },
-  { name: 'David Puig', odds: '+12000' },
-  { name: 'Jason Day', odds: '+12500' },
-  { name: 'Michael Thorbjornsen', odds: '+13000' },
-  { name: 'Keegan Bradley', odds: '+13000' },
-  { name: 'Harry Hall', odds: '+13500' },
-  { name: 'Kristoffer Reitan', odds: '+14000' },
-  { name: 'Thomas Detry', odds: '+14500' },
-  { name: 'Sungjae Im', odds: '+14500' },
-  { name: 'Jacob Bridgeman', odds: '+14500' },
-  { name: 'Corey Conners', odds: '+15500' },
-  { name: 'Alex Fitzpatrick', odds: '+15500' },
-  { name: 'Alex Smalley', odds: '+16000' },
-  { name: 'Alex Noren', odds: '+17500' },
-  { name: 'Marco Penge', odds: '+18500' },
-  { name: 'Wyndham Clark', odds: '+19500' },
-  { name: 'Keith Mitchell', odds: '+19500' },
-  { name: 'Sahith Theegala', odds: '+20000' },
-  { name: 'Nick Taylor', odds: '+20000' },
-  { name: 'Daniel Berger', odds: '+20000' },
-  { name: 'Rasmus Hojgaard', odds: '+21000' },
-  { name: 'Dustin Johnson', odds: '+23000' },
-  { name: 'Samuel Stevens', odds: '+24000' },
-  { name: 'Matt McCarty', odds: '+24000' },
-  { name: 'Pierceson Coody', odds: '+25000' },
-  { name: 'Ryan Gerard', odds: '+26000' },
-  { name: 'Jordan Smith', odds: '+26000' },
-  { name: 'Sudarshan Yellamaraju', odds: '+27000' },
-  { name: 'Bud Cauley', odds: '+28000' },
-  { name: 'Brian Harman', odds: '+28000' },
-  { name: 'Aaron Rai', odds: '+28000' },
-  { name: 'Jayden Schaper', odds: '+29000' },
-  { name: 'J.T. Poston', odds: '+29000' },
-  { name: 'Taylor Pendrith', odds: '+30000' },
-  { name: 'Angel Ayora', odds: '+30000' },
-  { name: 'Ryo Hisatsune', odds: '+32500' },
-  { name: 'Michael Kim', odds: '+33000' },
-  { name: 'Max Homa', odds: '+33000' },
-  { name: 'Denny McCarthy', odds: '+33000' },
-  { name: 'Tom McKibbin', odds: '+34000' },
-  { name: 'Cameron Smith', odds: '+35000' },
-  { name: 'Christiaan Bezuidenhout', odds: '+35000' },
-  { name: 'Rico Hoey', odds: '+36000' },
-  { name: 'Matt Wallace', odds: '+36000' },
-  { name: 'Ryan Fox', odds: '+37000' },
-  { name: 'Haotong Li', odds: '+38000' },
-  { name: 'Michael Brennan', odds: '+39000' },
-  { name: 'Ricky Castillo', odds: '+40000' },
-  { name: 'Max Greyserman', odds: '+41000' },
-  { name: 'Aldrich Potgieter', odds: '+42500' },
-  { name: 'Andrew Novak', odds: '+43000' },
-  { name: 'Patrick Rodgers', odds: '+43000' },
-  { name: 'Rasmus Neergaard-Petersen', odds: '+44000' },
-  { name: 'Daniel Hillier', odds: '+48000' },
-  { name: 'Stephan Jaeger', odds: '+50000' },
-  { name: 'Billy Horschel', odds: '+52500' },
-  { name: 'Nico Echavarria', odds: '+52500' },
-  { name: 'Max McGreevy', odds: '+52500' },
-  { name: 'Chris Kirk', odds: '+52500' },
-  { name: 'Ian Holt', odds: '+55000' },
-  { name: 'Casey Jarvis', odds: '+55000' },
-  { name: 'Austin Smotherman', odds: '+55000' },
-  { name: 'William Mouw', odds: '+57500' },
-  { name: 'Steven Fisk', odds: '+57500' },
+  { name: 'Scottie Scheffler', odds: '+465' },
+  { name: 'Rory McIlroy', odds: '+970' },
+  { name: 'Jon Rahm', odds: '+1050' },
+  { name: 'Xander Schauffele', odds: '+1700' },
+  { name: 'Cameron Young', odds: '+2050' },
+  { name: 'Matt Fitzpatrick', odds: '+2150' },
+  { name: 'Tommy Fleetwood', odds: '+2400' },
+  { name: 'Ludvig Aberg', odds: '+2600' },
+  { name: 'Bryson DeChambeau', odds: '+2900' },
+  { name: 'Brooks Koepka', odds: '+3400' },
+  { name: 'Collin Morikawa', odds: '+3600' },
+  { name: 'Russell Henley', odds: '+3700' },
+  { name: 'Wyndham Clark', odds: '+3800' },
+  { name: 'Si Woo Kim', odds: '+3900' },
+  { name: 'Sam Burns', odds: '+3900' },
+  { name: 'Chris Gotterup', odds: '+4600' },
+  { name: 'Justin Thomas', odds: '+4600' },
+  { name: 'Patrick Cantlay', odds: '+4600' },
+  { name: 'Tyrrell Hatton', odds: '+4700' },
+  { name: 'Patrick Reed', odds: '+4900' },
+  { name: 'Viktor Hovland', odds: '+5000' },
+  { name: 'Justin Rose', odds: '+5300' },
+  { name: 'J.J. Spaun', odds: '+6200' },
+  { name: 'Robert MacIntyre', odds: '+6200' },
+  { name: 'Hideki Matsuyama', odds: '+6700' },
+  { name: 'Min Woo Lee', odds: '+6800' },
+  { name: 'Jordan Spieth', odds: '+7000' },
+  { name: 'Kurt Kitayama', odds: '+7200' },
+  { name: 'Joaquin Niemann', odds: '+7200' },
+  { name: 'Ben Griffin', odds: '+7400' },
+  { name: 'Adam Scott', odds: '+7600' },
+  { name: 'Maverick McNealy', odds: '+7800' },
+  { name: 'Shane Lowry', odds: '+8400' },
+  { name: 'Harris English', odds: '+8800' },
+  { name: 'Jake Knapp', odds: '+9800' },
+  { name: 'Bud Cauley', odds: '+9800' },
+  { name: 'David Puig', odds: '+10000' },
+  { name: 'Alex Fitzpatrick', odds: '+10000' },
+  { name: 'Alex Smalley', odds: '+10500' },
+  { name: 'Aaron Rai', odds: '+10500' },
+  { name: 'Ryan Gerard', odds: '+10500' },
+  { name: 'Kristoffer Reitan', odds: '+11000' },
+  { name: 'Sepp Straka', odds: '+11000' },
+  { name: 'Rickie Fowler', odds: '+11000' },
+  { name: 'J.T. Poston', odds: '+11500' },
+  { name: 'Gary Woodland', odds: '+12000' },
+  { name: 'Nicolai Hojgaard', odds: '+12000' },
+  { name: 'Jacob Bridgeman', odds: '+13000' },
+  { name: 'Jason Day', odds: '+13500' },
+  { name: 'Alex Noren', odds: '+13500' },
+  { name: 'Sudarshan Yellamaraju', odds: '+14000' },
+  { name: 'Keith Mitchell', odds: '+14500' },
+  { name: 'Jackson Koivun', odds: '+14500' },
+  { name: 'Akshay Bhatia', odds: '+14500' },
+  { name: 'Keegan Bradley', odds: '+15000' },
+  { name: 'Cameron Smith', odds: '+15000' },
+  { name: 'Ryan Fox', odds: '+16500' },
+  { name: 'Dustin Johnson', odds: '+17500' },
+  { name: 'Sahith Theegala', odds: '+17500' },
+  { name: 'Harry Hall', odds: '+18500' },
+  { name: 'Tom Kim', odds: '+19000' },
+  { name: 'Pierceson Coody', odds: '+19500' },
+  { name: 'Daniel Berger', odds: '+21000' },
+  { name: 'Corey Conners', odds: '+21000' },
+  { name: 'Brian Harman', odds: '+21000' },
+  { name: 'Sungjae Im', odds: '+21000' },
+  { name: 'Jackson Suber', odds: '+23000' },
+  { name: 'Davis Thompson', odds: '+24000' },
+  { name: 'Ryo Hisatsune', odds: '+24000' },
+  { name: 'Nick Taylor', odds: '+24000' },
+  { name: 'Lucas Herbert', odds: '+26000' },
+  { name: 'Jayden Schaper', odds: '+26000' },
+  { name: 'Sam Stevens', odds: '+28000' },
+  { name: 'Max Greyserman', odds: '+29000' },
+  { name: 'Carlos Ortiz', odds: '+29000' },
+  { name: 'Andrew Novak', odds: '+29000' },
+  { name: 'Michael Kim', odds: '+29000' },
+  { name: 'Matt McCarty', odds: '+30000' },
+  { name: 'Andrew Putnam', odds: '+32500' },
+  { name: 'Benjamin James', odds: '+33000' },
+  { name: 'Michael Brennan', odds: '+38000' },
+  { name: 'John Keefer', odds: '+41000' },
+  { name: 'William Mouw', odds: '+43000' },
+  { name: 'Adrien Dumont De Chassart', odds: '+45000' },
+  { name: 'Preston Stout', odds: '+45000' },
+  { name: 'Max McGreevy', odds: '+45000' },
+  { name: 'Patrick Rodgers', odds: '+47000' },
+  { name: 'Nico Echavarria', odds: '+49000' },
+  { name: 'Chris Kirk', odds: '+50000' },
+  { name: 'Matthias Schmid', odds: '+52500' },
+  { name: 'Emiliano Grillo', odds: '+55000' },
   { name: 'John Parry', odds: '+57500' },
-  { name: 'Garrick Higgo', odds: '+60000' },
-  { name: 'John Keefer', odds: '+62500' },
-  { name: 'Matti Schmid', odds: '+65000' },
-  { name: 'Sami Valimaki', odds: '+67500' },
-  { name: 'Stewart Cink', odds: '+70000' },
-  { name: 'Mikael Lindberg', odds: '+72500' },
-  { name: 'Lucas Glover', odds: '+72500' },
-  { name: 'Daniel Brown', odds: '+72500' },
-  { name: 'Andrew Putnam', odds: '+77500' },
-  { name: 'Jhonattan Vegas', odds: '+87500' },
-  { name: 'Bernd Wiesberger', odds: '+90000' },
-  { name: 'Emiliano Grillo', odds: '+92500' },
-  { name: 'Brandt Snedeker', odds: '+110000' },
-  { name: 'Adrien Saddier', odds: '+115000' },
-  { name: 'Elvis Smylie', odds: '+130000' },
-  { name: 'David Lipsky', odds: '+145000' },
-  { name: 'Kota Kaneko', odds: '+150000' },
-  { name: 'Chandler Blanchet', odds: '+170000' },
-  { name: 'Andy Sullivan', odds: '+170000' },
-  { name: 'Joe Highsmith', odds: '+200000' },
-  { name: 'Adam Schenk', odds: '+225000' },
-  { name: 'Travis Smyth', odds: '+225000' },
-  { name: 'Davis Riley', odds: '+250000' },
-  { name: 'Brian Campbell', odds: '+400000' },
-  { name: 'Martin Kaymer', odds: '+450000' },
-  { name: 'Kazuki Higa', odds: '+450000' },
-  { name: 'Ryan Vermeer', odds: '+500000' },
-  { name: 'Austin Hurt', odds: '+500000' },
-  { name: 'Tyler Collet', odds: '+500000' },
-  { name: 'Timothy Wiseman', odds: '+500000' },
-  { name: 'Shaun Micheel', odds: '+500000' },
-  { name: 'Y.E. Yang', odds: '+500000' },
-  { name: 'Ryan Lenahan', odds: '+500000' },
-  { name: 'Padraig Harrington', odds: '+500000' },
-  { name: 'Michael Kartrude', odds: '+500000' },
-  { name: 'Michael Block', odds: '+500000' },
-  { name: 'Mark Geddes', odds: '+500000' },
-  { name: 'Luke Donald', odds: '+500000' },
-  { name: 'Bryce Fisher', odds: '+500000' },
-  { name: 'Jordan Gumberg', odds: '+500000' },
-  { name: 'Jimmy Walker', odds: '+500000' },
-  { name: 'Jason Dufner', odds: '+500000' },
-  { name: 'Jesse Droemer', odds: '+500000' },
-  { name: 'Jared Jones', odds: '+500000' },
-  { name: 'Garrett Sapp', odds: '+500000' },
-  { name: 'Francisco Bide', odds: '+500000' },
-  { name: 'Zach Haynes', odds: '+500000' },
-  { name: 'Paul McClure', odds: '+500000' },
-  { name: 'Derek Berg', odds: '+500000' },
-  { name: 'Chris Gabriele', odds: '+500000' },
-  { name: 'Braden Shattuck', odds: '+500000' },
-  { name: 'Ben Polland', odds: '+500000' },
-  { name: 'Ben Kern', odds: '+500000' },
+  { name: 'Nathan Kimsey', odds: '+57500' },
+  { name: 'Ben Kohles', odds: '+60000' },
+  { name: 'Billy Horschel', odds: '+60000' },
+  { name: 'Hennie du Plessis', odds: '+65000' },
+  { name: 'Chandler Phillips', odds: '+67500' },
+  { name: 'Neal Shipley', odds: '+67500' },
+  { name: 'Cooper Dossey', odds: '+72500' },
+  { name: 'Caleb Surratt', odds: '+77500' },
+  { name: 'Laurie Canter', odds: '+85000' },
+  { name: 'Kevin Roy', odds: '+90000' },
+  { name: 'Adrien Saddier', odds: '+90000' },
+  { name: 'Ugo Coussaud', odds: '+92500' },
+  { name: 'Jimmy Stanger', odds: '+97500' },
+  { name: 'Matthew Jordan', odds: '+120000' },
+  { name: 'Zac Blair', odds: '+130000' },
+  { name: 'Cole Hammer', odds: '+145000' },
+  { name: 'Alejandro Tosti', odds: '+150000' },
+  { name: 'Padraig Harrington', odds: '+170000' },
+  { name: 'Dylan Wu', odds: '+180000' },
+  { name: 'Peter Uihlein', odds: '+180000' },
+  { name: 'Ben Silverman', odds: '+200000' },
+  { name: 'Taylor Montgomery', odds: '+200000' },
+  { name: 'Niklas Norgaard', odds: '+200000' },
+  { name: 'Carl Yuan', odds: '+250000' },
+  { name: 'Nick Hardy', odds: '+250000' },
+  { name: 'Arni Sveinsson', odds: '+275000' },
+  { name: 'Ethan Fang', odds: '+275000' },
+  { name: 'Mason Howell', odds: '+300000' },
+  { name: 'Eric Lee', odds: '+325000' },
+  { name: 'James Nicholas', odds: '+325000' },
+  { name: 'Graeme McDowell', odds: '+325000' },
+  { name: 'Taihei Sato', odds: '+325000' },
+  { name: 'Ryder Cowan', odds: '+325000' },
+  { name: 'Greyson Leach', odds: '+350000' },
+  { name: 'Harry Higgs', odds: '+350000' },
+  { name: 'Jackson Herrington', odds: '+400000' },
+  { name: 'Mateo Pulcini', odds: '+450000' },
+  { name: 'Chase Kyes', odds: '+450000' },
+  { name: 'Marcelo Rozo', odds: '+450000' },
+  { name: 'Jake Peacock', odds: '+450000' },
+  { name: 'Jackson Van Paris', odds: '+450000' },
+  { name: 'J.B. Holmes', odds: '+450000' },
+  { name: 'Filippo Celli', odds: '+450000' },
+  { name: 'Bryan Lee', odds: '+450000' },
+  { name: 'Spencer Tibbits', odds: '+450000' },
+  { name: 'Rocco Repetto', odds: '+450000' },
+  { name: 'Logan Reilly', odds: '+450000' },
+  { name: 'Manav Shah', odds: '+500000' },
+  { name: 'Kaito Onishi', odds: '+500000' },
+  { name: 'Jake Sollon', odds: '+500000' },
+  { name: 'Jackson Ormond', odds: '+500000' },
+  { name: 'Jack Schoenberger', odds: '+500000' },
+  { name: 'Brandon Wu', odds: '+500000' },
+  { name: 'Brandon Holtz', odds: '+500000' },
+  { name: 'Angel Hidalgo', odds: '+500000' },
+  { name: 'Ryuichi Oiwa', odds: '+500000' },
+  { name: 'Robbie Higgins', odds: '+500000' },
+  { name: 'Vaughn Harber', odds: '+500000' },
+  { name: 'Taek Soo Kim', odds: '+500000' },
+  { name: 'Matt Robles', odds: '+500000' },
+  { name: 'Marek Fleming', odds: '+500000' },
+  { name: 'Hamilton Coleman', odds: '+500000' },
 ];
 
 export default function Home() {
@@ -262,7 +261,7 @@ export default function Home() {
   };
 
   const handleAdminLogin = () => {
-    if (adminPassword === (process.env.NEXT_PUBLIC_ADMIN_PASSWORD || 'pga2025')) {
+    if (adminPassword === (process.env.NEXT_PUBLIC_ADMIN_PASSWORD || 'usopen2025')) {
       setAdminAuthed(true); setAdminError('');
     } else setAdminError('Wrong password');
   };
@@ -294,7 +293,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>PGA Championship 2025 — Pool Draft</title>
+        <title>US Open 2026 — Pool Draft</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
       </Head>
@@ -303,10 +302,10 @@ export default function Home() {
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         :root{
           --bg:#0a0c0e;--surface:#111418;--surface2:#1a1f26;--border:#2a3040;
-          --gold:#c9a84c;--text:#e8eaed;--muted:#8892a0;--green:#22c55e;--red:#ef4444;--r:10px;
+          --gold:#4a90d9;--text:#e8eaed;--muted:#8892a0;--green:#22c55e;--red:#ef4444;--r:10px;
         }
         body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh}
-        .hdr{background:linear-gradient(180deg,#0d1117 0%,var(--bg) 100%);border-bottom:1px solid var(--border);padding:18px 16px 14px;text-align:center;position:sticky;top:0;z-index:50}
+        .hdr{background:linear-gradient(180deg,#0a0f1a 0%,var(--bg) 100%);border-bottom:1px solid var(--border);padding:18px 16px 14px;text-align:center;position:sticky;top:0;z-index:50}
         .hdr-eye{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
         .hdr-title{font-family:'Bebas Neue',cursive;font-size:clamp(28px,8vw,48px);letter-spacing:2px;line-height:1;margin-bottom:2px}
         .hdr-sub{font-size:12px;color:var(--muted);margin-bottom:12px}
@@ -330,7 +329,7 @@ export default function Home() {
         .name-grid{display:flex;flex-wrap:wrap;gap:7px}
         .nbtn{padding:7px 13px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--muted);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s}
         .nbtn:hover{border-color:var(--gold);color:var(--text)}
-        .nbtn.active{background:var(--gold);border-color:var(--gold);color:#0a0c0e;font-weight:700}
+        .nbtn.active{background:var(--gold);border-color:var(--gold);color:#fff;font-weight:700}
         .nbtn .pc{background:rgba(0,0,0,.2);border-radius:10px;padding:1px 5px;font-size:10px;margin-left:4px}
         .mphdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
         .ctr{font-family:'Bebas Neue',cursive;font-size:22px;color:var(--gold)}
@@ -365,7 +364,7 @@ export default function Home() {
         .tbadge{font-size:11px;font-weight:600;padding:2px 7px;border-radius:4px;flex-shrink:0}
         .pbtn{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--border);background:none;color:var(--muted);font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .12s;flex-shrink:0;line-height:1}
         .pbtn.ready{border-color:var(--gold);color:var(--gold)}
-        .pbtn.ready:hover{background:var(--gold);color:#0a0c0e}
+        .pbtn.ready:hover{background:var(--gold);color:#fff}
         .logrow{display:flex;align-items:center;gap:9px;padding:5px 0;border-bottom:1px solid var(--border);font-size:12px}
         .logrow:last-child{border-bottom:none}
         .lnum{font-family:'Bebas Neue',cursive;font-size:14px;color:var(--muted);width:22px}
@@ -376,7 +375,7 @@ export default function Home() {
         .adminput{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:7px 11px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;outline:none;width:140px;margin-right:8px}
         .adminput:focus{border-color:var(--gold)}
         .btn{padding:7px 13px;border-radius:6px;border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;margin-right:6px;margin-bottom:6px}
-        .bg{background:var(--gold);color:#0a0c0e}
+        .bg{background:var(--gold);color:#fff}
         .br{background:var(--red);color:#fff}
         .bo{background:#f97316;color:#fff}
         .errmsg{color:var(--red);font-size:12px;margin-top:5px}
@@ -390,8 +389,8 @@ export default function Home() {
       `}</style>
 
       <div className="hdr">
-        <div className="hdr-eye">Quail Hollow · Charlotte, NC</div>
-        <div className="hdr-title">PGA Championship 2025</div>
+        <div className="hdr-eye">Shinnecock Hills · Southampton, NY</div>
+        <div className="hdr-title">US Open 2026</div>
         <div className="hdr-sub">Snake Draft — 7 picks each · Top 4 scores count</div>
         <div className="hdr-stats">
           <div className="stat">Pick <span>{currentPickNum + 1}</span> of 63</div>
@@ -527,11 +526,11 @@ export default function Home() {
             const takerColor = takenBy[golfer.name] ? PARTICIPANT_COLORS[takenBy[golfer.name]] : null;
             const canPick = isMyTurn && !isTaken;
             const oddsNum = parseInt(golfer.odds.replace('+', ''));
-            let group = oddsNum <= 3800 ? '⭐ Favorites'
+            let group = oddsNum <= 3600 ? '⭐ Favorites'
               : oddsNum <= 10000 ? 'Contenders'
               : oddsNum <= 25000 ? 'Mid-Tier'
               : oddsNum <= 60000 ? 'Longshots'
-              : oddsNum <= 150000 ? 'Deep Shots' : 'Qualifiers';
+              : oddsNum <= 200000 ? 'Deep Shots' : 'Qualifiers';
             const showHdr = group !== lastGroup && !search;
             if (showHdr) lastGroup = group;
             return (
